@@ -1,0 +1,30 @@
+@use '../variables'
+
+.container
+    display: flex
+    flex: 1
+    margin-top: variables.$mt-medium
+
+    #line
+        width: 2px
+        height: 100%
+        background-color: white
+
+    ul
+        list-style: none
+        li
+            margin-left: variables.$ml-small
+            margin-bottom: variables.$mb-small
+            font-size: variables.$font-size-small
+            a
+                padding: 1rem
+                transition: color 0.3s
+                color: variables.$color-white
+
+    ul
+        li:hover
+            transition: 0.3s
+            list-style: square inside
+            color: variables.$color-light-blue
+            a
+                color: variables.$color-light-blue
